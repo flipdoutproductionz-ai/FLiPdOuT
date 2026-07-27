@@ -287,3 +287,29 @@ video,audio{
     font-size:.95rem;
   }
 }
+
+.page-hero{
+  width:min(1120px, calc(100% - 48px));
+  margin:0 auto;
+  padding:96px 0 24px;
+  text-align:center;
+}
+
+.page-hero h1{
+  margin:0;
+  font-size:clamp(2.6rem, 7vw, 5rem);
+  line-height:1.02;
+  letter-spacing:-.04em;
+}
+
+.active{
+  color:var(--text) !important;
+}
+
+@media (max-width: 860px){
+  .page-hero{
+    width:min(1120px, calc(100% - 28px));
+    padding:80px 0 10px;
+    text-align:left;
+  }
+}
