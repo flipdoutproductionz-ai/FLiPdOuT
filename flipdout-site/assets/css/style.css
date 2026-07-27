@@ -258,3 +258,32 @@ video,audio{
   .nav-cta{padding:8px 12px}
   .gallery-grid img{height:220px}
 }
+
+.site-header.scrolled{
+  background:rgba(7,17,31,.94);
+  box-shadow:0 12px 30px rgba(0,0,0,.22);
+}
+
+.pre-reveal{
+  opacity:0;
+  transform:translateY(18px);
+  transition:opacity .7s ease, transform .7s ease;
+}
+
+.pre-reveal.reveal{
+  opacity:1;
+  transform:translateY(0);
+}
+
+@media (max-width: 860px){
+  .site-nav{
+    justify-content:flex-start;
+  }
+}
+
+@media (max-width: 640px){
+  .site-nav{
+    gap:10px;
+    font-size:.95rem;
+  }
+}
