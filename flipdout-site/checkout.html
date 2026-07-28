@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Secure checkout for FLiPs Flight Ops Companion by FLiPdOuT ProDucTioNz." />
+  <title>FLiPdOuT ProDucTioNz | Checkout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=9" />
+  <style>
+    .checkout-wrap{max-width:var(--max);margin:0 auto;padding:clamp(28px,5vw,64px) clamp(18px,4vw,34px)}
+    .checkout-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;align-items:start}
+    .checkout-hero,.checkout-card{border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.045));backdrop-filter:blur(16px);box-shadow:var(--shadow);border-radius:var(--radius)}
+    .checkout-hero{padding:28px}
+    .checkout-card{padding:26px}
+    .checkout-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(87,217,255,.12);border:1px solid rgba(87,217,255,.25);color:#dffaff;font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+    .price-line{display:flex;align-items:baseline;justify-content:space-between;gap:14px;margin:20px 0 14px}
+    .price-big{font-size:clamp(2.4rem,5vw,4rem);font-weight:900;letter-spacing:-.05em;background:linear-gradient(135deg,#fff,var(--brand));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .checkout-list{margin:18px 0 0;padding:0;list-style:none}
+    .checkout-list li{padding:12px 0;border-top:1px solid rgba(255,255,255,.08);color:var(--muted)}
+    .stripe-box{
+      min-height:420px;
+      display:flex;align-items:center;justify-content:center;
+      border-radius:18px;
+      border:1px dashed rgba(87,217,255,.25);
+      background:linear-gradient(180deg, rgba(0,0,0,.18), rgba(255,255,255,.02));
+      color:var(--muted);
+      text-align:center;
+      padding:18px;
+    }
+    .inline-note{font-size:.92rem;color:var(--muted);margin-top:14px}
+    @media (max-width:1080px){.checkout-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">FLiPdOuT</a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="vision.html">Vision</a>
+      <a href="products.html">Products</a>
+      <a href="media.html">Media</a>
+      <a href="contact.html">Contact</a>
+      <a href="products.html#buy" class="nav-cta">Buy</a>
+    </nav>
+  </header>
+
+  <main id="main" class="checkout-wrap">
+    <section class="checkout-grid">
+      <div class="checkout-hero">
+        <span class="checkout-badge">Launch access request</span>
+        <p class="eyebrow" style="margin-top:16px">FLiPs Flight Ops Companion</p>
+        <h1>Complete your launch access.</h1>
+        <p class="hero-copy">
+          One-time ownership for the flagship release. No subscriptions. No API costs. No refunds.
+          Built for sim pilots who want premium immersion without recurring fees.
+        </p>
+
+        <div class="price-line">
+          <div>
+            <p class="label">Launch Edition</p>
+            <div class="price-big">$25</div>
+          </div>
+          <div style="text-align:right">
+            <p class="label">Includes</p>
+            <p style="margin:0;color:var(--muted)">Lifetime access</p>
+          </div>
+        </div>
+
+        <ul class="checkout-list">
+          <li>Local LLM copilot support.</li>
+          <li>ATC, ground crew, stewardess, and passenger features.</li>
+          <li>Offline mode with support for any simulator.</li>
+          <li>A premium FLiPdOuT launch package built for real simmers.</li>
+        </ul>
+
+        <p class="inline-note">
+          Payment is processed securely through Stripe. Replace the placeholder checkout button or embed with your live Stripe session.
+        </p>
+      </div>
+
+      <div class="checkout-card">
+        <p class="label">Payment</p>
+        <h2>Stripe checkout area</h2>
+        <div class="stripe-box" id="stripe-checkout">
+          <div>
+            <h3 style="margin:0 0 10px;color:var(--text)">Stripe Session Placeholder</h3>
+            <p style="margin:0 0 18px">
+              Connect your Stripe Checkout Session or Embedded Checkout here.
+            </p>
+            <a class="btn btn-primary" href="contact.html" id="pay-btn">Request launch access</a>
+            <p class="inline-note">
+              Tip: point this button to your Stripe Checkout Session URL once your backend is ready.
+            </p>
+          </div>
+        </div>
+
+        <div class="buy-panel" style="margin-top:18px">
+          <p class="label">What happens next</p>
+          <p style="margin-bottom:0">
+            After payment, send customers to a success page and deliver the product download, license info, or access instructions.
+            Stripe recommends hosted Checkout or embedded Checkout for a clean payment flow, with success and cancel URLs configured server-side [web:639][web:642][web:643][web:644].
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 FLiPdOuT ProDucTioNz</p>
+  </footer>
+
+  <script src="assets/js/main.js?v=9"></script>
+</body>
+</html>
