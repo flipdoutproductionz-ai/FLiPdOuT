@@ -599,3 +599,47 @@ audio{
     font-size:1rem;
   }
 }
+
+.contact-form{
+  width:min(100%, 420px);
+  display:grid;
+  gap:14px;
+}
+
+.contact-form label{
+  display:grid;
+  gap:8px;
+  font-weight:700;
+  color:var(--text);
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:rgba(255,255,255,.04);
+  color:var(--text);
+  padding:14px 16px;
+  font:inherit;
+  outline:none;
+  transition:border-color .25s ease, box-shadow .25s ease, background .25s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+  border-color:rgba(0,212,255,.45);
+  box-shadow:0 0 0 4px rgba(0,212,255,.10);
+  background:rgba(255,255,255,.06);
+}
+
+.contact-form textarea{
+  resize:vertical;
+  min-height:140px;
+}
+
+@media (max-width: 860px){
+  .contact-form{
+    width:100%;
+  }
+}
