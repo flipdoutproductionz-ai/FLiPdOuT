@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=3" />
+  <link rel="stylesheet" href="assets/css/style.css?v=9" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -16,9 +16,7 @@
   <header class="site-header">
     <a class="brand" href="index.html">FLiPdOuT</a>
     <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="siteNav">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </button>
     <nav class="site-nav" id="siteNav">
       <a href="index.html">Home</a>
@@ -32,7 +30,7 @@
   </header>
 
   <main id="main">
-    <section class="page-hero">
+    <section class="hero">
       <div class="hero-copy-wrap">
         <p class="eyebrow">Flagship Release</p>
         <h1>FLiPs Flight Ops Companion.</h1>
@@ -45,7 +43,6 @@
           <a class="btn btn-secondary" href="vision.html">See the system vision</a>
         </div>
       </div>
-
       <figure class="hero-image">
         <img src="assets/images/343126.jpg" alt="FLiPs Flight Ops Companion shown in a flight simulator cockpit." />
       </figure>
@@ -53,15 +50,13 @@
 
     <section class="section">
       <div class="buy-panel">
-        <div>
-          <p class="label">Why it matters</p>
-          <h2>Built for the budget sim community.</h2>
-          <p>
-            FLiPs Flight Ops Companion is for the pilots who do not want another subscription.
-            It is for the budget sim community — the ones who want ownership, value, and real immersion without recurring fees.
-            This is a serious win against subscription-heavy tools.
-          </p>
-        </div>
+        <p class="label">Why it matters</p>
+        <h2>Built for the budget sim community.</h2>
+        <p>
+          FLiPs Flight Ops Companion is for the pilots who do not want another subscription.
+          It is for the budget sim community — the ones who want ownership, value, and real immersion without recurring fees.
+          This is a serious win against subscription-heavy tools.
+        </p>
       </div>
     </section>
 
@@ -88,40 +83,32 @@
           <p>Works with any simulator in offline mode, and can read Aerofly FS 4 PC and X-Plane PC telemetry in real time.</p>
         </article>
       </div>
+      <div class="atmo-row">
+        <img src="assets/images/cockpit.jpg" alt="Cockpit view for atmosphere" />
+        <img src="assets/images/cabin.jpg" alt="Cabin atmosphere" />
+        <img src="assets/images/groundcrew.jpg" alt="Ground crew and ramp operations" />
+      </div>
     </section>
 
     <section class="section">
-      <div class="buy-panel">
-        <div>
-          <p class="label">Built from the vision</p>
-          <h2>The first step in the FLiP Legendary System.</h2>
-          <p>
-            This flagship release introduces the tone, structure, and identity of the wider ecosystem.
-            Right now, only FLiPs Flight Ops Companion is ready. The larger FLiP system is still in development.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="buy">
-      <div class="section-head">
+      <div class="buy-panel" id="buy">
         <p class="label">Purchase</p>
         <h2>One-time ownership.</h2>
-      </div>
-      <div class="pricing-grid">
-        <article class="price-card featured">
-          <p class="price-label">FLiPs Flight Ops Companion</p>
-          <h3>Launch Edition</h3>
-          <p class="price-copy">One-time purchase. No subscriptions. No API costs. No refunds.</p>
-          <div class="price">$25</div>
-          <ul class="feature-list">
-            <li>Lifetime access to the flagship product.</li>
-            <li>Local LLM copilot support.</li>
-            <li>ATC, ground crew, stewardess, and passenger features.</li>
-            <li>Offline mode with support for any simulator.</li>
-          </ul>
-          <a class="btn btn-primary" href="contact.html">Request launch access</a>
-        </article>
+        <p class="hero-copy">One-time purchase. No subscriptions. No API costs. No refunds.</p>
+        <div class="pricing-grid">
+          <article class="price-card featured">
+            <p class="price-label">FLiPs Flight Ops Companion</p>
+            <h3>Launch Edition</h3>
+            <div class="price">$25</div>
+            <ul class="feature-list">
+              <li>Lifetime access to the flagship product.</li>
+              <li>Local LLM copilot support.</li>
+              <li>ATC, ground crew, stewardess, and passenger features.</li>
+              <li>Offline mode with support for any simulator.</li>
+            </ul>
+            <a class="btn btn-primary" href="contact.html">Request launch access</a>
+          </article>
+        </div>
       </div>
     </section>
   </main>
@@ -130,6 +117,6 @@
     <p>© 2026 FLiPdOuT ProDucTioNz</p>
   </footer>
 
-  <script src="assets/js/main.js?v=3"></script>
+  <script src="assets/js/main.js?v=9"></script>
 </body>
 </html>
